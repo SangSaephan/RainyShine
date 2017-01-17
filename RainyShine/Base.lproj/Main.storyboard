@@ -86,7 +86,7 @@
                                 <rect key="frame" x="0.0" y="328" width="375" height="339"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="teZ-KR-NEv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="70" id="teZ-KR-NEv">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="teZ-KR-NEv" id="W2v-ag-V6C">
@@ -101,7 +101,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ah5-bT-j8g">
-                                                    <rect key="frame" x="86" y="10" width="261" height="48"/>
+                                                    <rect key="frame" x="86" y="10.5" width="261" height="47.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="VR1-Y4-hmp">
                                                             <rect key="frame" x="0.0" y="0.0" width="216.5" height="47.5"/>
@@ -149,6 +149,7 @@
                                                 <constraint firstItem="ah5-bT-j8g" firstAttribute="leading" secondItem="9C8-Z3-cIg" secondAttribute="trailing" constant="8" id="t4k-Cg-uvE"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
