@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4EA105921E2E0F6F0001057A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA105911E2E0F6F0001057A /* AppDelegate.swift */; };
-		4EA105941E2E0F6F0001057A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA105931E2E0F6F0001057A /* ViewController.swift */; };
+		4EA105941E2E0F6F0001057A /* WeatherVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA105931E2E0F6F0001057A /* WeatherVC.swift */; };
 		4EA105971E2E0F6F0001057A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA105951E2E0F6F0001057A /* Main.storyboard */; };
 		4EA105991E2E0F6F0001057A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA105981E2E0F6F0001057A /* Assets.xcassets */; };
 		4EA1059C1E2E0F6F0001057A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA1059A1E2E0F6F0001057A /* LaunchScreen.storyboard */; };
@@ -20,7 +20,7 @@
 		18CB2E7E21286FED53F940D5 /* Pods_RainyShine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainyShine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA1058E1E2E0F6F0001057A /* RainyShine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainyShine.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EA105911E2E0F6F0001057A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EA105931E2E0F6F0001057A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4EA105931E2E0F6F0001057A /* WeatherVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherVC.swift; sourceTree = "<group>"; };
 		4EA105961E2E0F6F0001057A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EA105981E2E0F6F0001057A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EA1059B1E2E0F6F0001057A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -61,14 +61,22 @@
 		4EA105901E2E0F6F0001057A /* RainyShine */ = {
 			isa = PBXGroup;
 			children = (
+				4EA105A31E2E18920001057A /* Controller */,
 				4EA105911E2E0F6F0001057A /* AppDelegate.swift */,
-				4EA105931E2E0F6F0001057A /* ViewController.swift */,
 				4EA105951E2E0F6F0001057A /* Main.storyboard */,
 				4EA105981E2E0F6F0001057A /* Assets.xcassets */,
 				4EA1059A1E2E0F6F0001057A /* LaunchScreen.storyboard */,
 				4EA1059D1E2E0F700001057A /* Info.plist */,
 			);
 			path = RainyShine;
+			sourceTree = "<group>";
+		};
+		4EA105A31E2E18920001057A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				4EA105931E2E0F6F0001057A /* WeatherVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		5A024CA6C46E26C330AEAB6B /* Pods */ = {
@@ -211,7 +219,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EA105941E2E0F6F0001057A /* ViewController.swift in Sources */,
+				4EA105941E2E0F6F0001057A /* WeatherVC.swift in Sources */,
 				4EA105921E2E0F6F0001057A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -374,6 +382,7 @@
 				4EA105A21E2E0F700001057A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
