@@ -13,7 +13,7 @@ class CurrentWeather {
     private var _cityName: String?
     private var _date: String?
     private var _weatherType: String?
-    private var _currentTemp: Double?
+    private var _currentTemp: Int?
     
     var cityName: String {
         if _cityName == nil {
@@ -46,40 +46,40 @@ class CurrentWeather {
         return _weatherType!
     }
     
-    var currentTemp: Double {
+    var currentTemp: Int {
         if _currentTemp == nil {
-            _currentTemp = 0.0
+            _currentTemp = 0
         }
         
         return _currentTemp!
     }
     
     // Download weather details from API
-    func downloadWeatherDetails(completed: DownloadComplete) {
-        let currentUrl = URL(string: currentWeatherUrl)
+    func downloadWeatherDetails(completed: @escaping DownloadComplete) {
+        let currentUrl = URL(string: currentWeatherUrl)!
         
-        Alamofire.request(currentUrl!).responseJSON { response in
-            if let result = response.result.value as? NSDictionary {
-                if let city = result["name"] as? String {
+        Alamofire.request(currentUrl).responseJSON { response in
+            let result = response.result
+            if let dictionary = result.value as? Dictionary<String, Any> {
+                if let city = dictionary["name"] as? String {
                     self._cityName = city.capitalized
-                    print(self.cityName)
                 }
                 
-                if let weather = result["weather"] as? [NSDictionary] {
+                if let weather = dictionary["weather"] as? [Dictionary<String, Any>] {
                     if let main = weather[0]["main"] as? String {
                         self._weatherType = main
-                        print(self.weatherType)
                     }
                 }
                 
-                if let temperature = result["main"] as? NSDictionary {
+                if let temperature = dictionary["main"] as? Dictionary<String, Any> {
                     if let temp = temperature["temp"] as? Double {
+                        // Convert temperature to fahrenheit from kelvin
                         let fahrenheit = temp * (9/5) - 459.67
-                        self._currentTemp = fahrenheit
-                        print(Int(round(self.currentTemp)))
+                        self._currentTemp = Int(round(fahrenheit))
                     }
                 }
             }
+            completed()
         }
     }
 }

@@ -14,6 +14,6 @@ let longitude = "&lon="
 let appId = "&appid="
 let apiKey = "cc1eb346585f997e112a8041477bf38e"
 
-typealias DownloadComplete = () -> ()
+typealias DownloadComplete = () -> Void
 
 let currentWeatherUrl = "\(baseUrl)\(latitude)37.8044\(longitude)-122.2711\(appId)\(apiKey)"
