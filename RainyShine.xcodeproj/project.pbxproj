@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E1273111E37D4B9008E0D4E /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1273101E37D4B9008E0D4E /* WeatherCell.swift */; };
 		4E67238D1E3136E100790916 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67238C1E3136E100790916 /* Constants.swift */; };
 		4E67238F1E313B7300790916 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67238E1E313B7300790916 /* CurrentWeather.swift */; };
 		4EA105921E2E0F6F0001057A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA105911E2E0F6F0001057A /* AppDelegate.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		0B9FA55D855CB0F56AF2C0A2 /* Pods-RainyShine.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShine.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShine/Pods-RainyShine.debug.xcconfig"; sourceTree = "<group>"; };
 		18CB2E7E21286FED53F940D5 /* Pods_RainyShine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainyShine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E1273101E37D4B9008E0D4E /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		4E67238C1E3136E100790916 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4E67238E1E313B7300790916 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		4EA1058E1E2E0F6F0001057A /* RainyShine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainyShine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,7 @@
 				4E67238C1E3136E100790916 /* Constants.swift */,
 				4E67238E1E313B7300790916 /* CurrentWeather.swift */,
 				4EEB82E71E375AD100B4AC9C /* Forecast.swift */,
+				4E1273101E37D4B9008E0D4E /* WeatherCell.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -238,6 +241,7 @@
 			files = (
 				4EA105941E2E0F6F0001057A /* WeatherVC.swift in Sources */,
 				4EA105921E2E0F6F0001057A /* AppDelegate.swift in Sources */,
+				4E1273111E37D4B9008E0D4E /* WeatherCell.swift in Sources */,
 				4E67238F1E313B7300790916 /* CurrentWeather.swift in Sources */,
 				4E67238D1E3136E100790916 /* Constants.swift in Sources */,
 				4EEB82E81E375AD100B4AC9C /* Forecast.swift in Sources */,

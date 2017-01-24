@@ -25,6 +25,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WY8-4t-vjq">
                                 <rect key="frame" x="0.0" y="28" width="375" height="300"/>
                                 <subviews>
+                                    <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syj-9m-oX3">
+                                        <rect key="frame" x="8" y="8" width="359" height="284"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YVy-cT-A1V">
                                         <rect key="frame" x="20" y="20" width="144" height="260"/>
                                         <subviews>
@@ -74,19 +78,23 @@
                                 <color key="backgroundColor" red="0.3538920980376784" green="0.69984338404681035" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="cww-ex-2X9" secondAttribute="trailing" constant="50" id="1O5-5h-VUL"/>
+                                    <constraint firstItem="syj-9m-oX3" firstAttribute="top" secondItem="WY8-4t-vjq" secondAttribute="top" constant="8" id="28m-NP-jCZ"/>
                                     <constraint firstAttribute="height" constant="300" id="2QR-yT-eCI"/>
+                                    <constraint firstItem="syj-9m-oX3" firstAttribute="leading" secondItem="WY8-4t-vjq" secondAttribute="leading" constant="8" id="Nic-aN-9fQ"/>
                                     <constraint firstAttribute="bottom" secondItem="YVy-cT-A1V" secondAttribute="bottom" constant="20" id="awq-QW-P1j"/>
                                     <constraint firstItem="cww-ex-2X9" firstAttribute="top" secondItem="WY8-4t-vjq" secondAttribute="top" constant="100" id="c8Q-1S-teE"/>
                                     <constraint firstAttribute="bottom" secondItem="cww-ex-2X9" secondAttribute="bottom" constant="20" id="h3A-xk-iyk"/>
                                     <constraint firstItem="YVy-cT-A1V" firstAttribute="top" secondItem="WY8-4t-vjq" secondAttribute="top" constant="20" id="jDb-1Z-pdK"/>
+                                    <constraint firstAttribute="bottom" secondItem="syj-9m-oX3" secondAttribute="bottom" constant="8" id="qBX-4i-jte"/>
                                     <constraint firstItem="YVy-cT-A1V" firstAttribute="leading" secondItem="WY8-4t-vjq" secondAttribute="leading" constant="20" id="vBa-DF-DsV"/>
+                                    <constraint firstAttribute="trailing" secondItem="syj-9m-oX3" secondAttribute="trailing" constant="8" id="xmG-no-mbV"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="70" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="yt0-Yi-6wE">
                                 <rect key="frame" x="0.0" y="328" width="375" height="339"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="70" id="teZ-KR-NEv">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="weatherCell" rowHeight="70" id="teZ-KR-NEv" customClass="WeatherCell" customModule="RainyShine" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="teZ-KR-NEv" id="W2v-ag-V6C">
@@ -94,7 +102,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9C8-Z3-cIg">
-                                                    <rect key="frame" x="28" y="9" width="50" height="50"/>
+                                                    <rect key="frame" x="16" y="9" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="71e-3z-EBF"/>
                                                         <constraint firstAttribute="width" constant="50" id="J89-SZ-JeH"/>
@@ -143,13 +151,20 @@
                                             <color key="backgroundColor" red="0.84817100763320918" green="0.84817100763320918" blue="0.84817100763320918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ah5-bT-j8g" secondAttribute="trailing" constant="20" id="7Lj-nk-aye"/>
-                                                <constraint firstItem="9C8-Z3-cIg" firstAttribute="leading" secondItem="W2v-ag-V6C" secondAttribute="leadingMargin" constant="20" id="BZg-ZJ-5Cv"/>
+                                                <constraint firstItem="9C8-Z3-cIg" firstAttribute="leading" secondItem="W2v-ag-V6C" secondAttribute="leadingMargin" constant="8" id="BZg-ZJ-5Cv"/>
                                                 <constraint firstItem="ah5-bT-j8g" firstAttribute="centerY" secondItem="W2v-ag-V6C" secondAttribute="centerY" id="JnW-0S-gIm"/>
-                                                <constraint firstItem="9C8-Z3-cIg" firstAttribute="centerY" secondItem="W2v-ag-V6C" secondAttribute="centerY" id="rQ9-pV-Sro"/>
-                                                <constraint firstItem="ah5-bT-j8g" firstAttribute="leading" secondItem="9C8-Z3-cIg" secondAttribute="trailing" constant="8" id="t4k-Cg-uvE"/>
+                                                <constraint firstItem="9C8-Z3-cIg" firstAttribute="centerY" secondItem="W2v-ag-V6C" secondAttribute="centerY" constant="-1" id="rQ9-pV-Sro"/>
+                                                <constraint firstItem="ah5-bT-j8g" firstAttribute="leading" secondItem="9C8-Z3-cIg" secondAttribute="trailing" constant="20" id="t4k-Cg-uvE"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                        <connections>
+                                            <outlet property="dayLabel" destination="U81-6e-4hZ" id="bia-7Q-2mw"/>
+                                            <outlet property="forecastLabel" destination="LB3-lG-4I9" id="rCB-qf-P5f"/>
+                                            <outlet property="highTempLabel" destination="ag8-mI-nV4" id="0uc-9s-9qh"/>
+                                            <outlet property="lowTempLabel" destination="EwF-l0-eKY" id="wtV-v8-Yca"/>
+                                            <outlet property="weatherImageView" destination="9C8-Z3-cIg" id="Jcs-kJ-svf"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>

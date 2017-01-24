@@ -38,14 +38,18 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return forecasts.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath) as! WeatherCell
+        let forecast = forecasts[indexPath.row]
+        cell.configureCell(forecast: forecast)
+        
         return cell
     }
     
+    // Download weather data for the next 9 days
     func downloadForecastDetails(completed: @escaping DownloadComplete) {
         let forecast = URL(string: forecastUrl)!
         
@@ -58,14 +62,16 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
                     for object in list {
                         let forecast = Forecast(weatherDict: object)
                         self.forecasts.append(forecast)
-                        print(object)
                     }
+                    self.forecasts.remove(at: 0)
+                    self.tableView.reloadData()
                 }
             }
             completed()
         }
     }
 
+    // Update UI for current weather
     func updateCurrentWeather() {
         dateLabel.text = currentWeather.date
         temperatureLabel.text = "\(currentWeather.currentTemp)°"
