@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -18,6 +19,8 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var tableView: UITableView!
     
     var currentWeather: CurrentWeather!
+    var forecast: Forecast!
+    var forecasts = [Forecast]()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,8 +30,11 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         
         currentWeather = CurrentWeather()
         currentWeather.downloadWeatherDetails {
-            self.updateCurrentWeather()
+            self.downloadForecastDetails {
+                self.updateCurrentWeather()
+            }
         }
+        
     }
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,6 +44,26 @@ class WeatherVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "weatherCell", for: indexPath)
         return cell
+    }
+    
+    func downloadForecastDetails(completed: @escaping DownloadComplete) {
+        let forecast = URL(string: forecastUrl)!
+        
+        Alamofire.request(forecast).responseJSON { response in
+            let result = response.result
+            
+            if let dictionary = result.value as? Dictionary<String, Any> {
+                
+                if let list = dictionary["list"] as? [Dictionary<String, Any>] {
+                    for object in list {
+                        let forecast = Forecast(weatherDict: object)
+                        self.forecasts.append(forecast)
+                        print(object)
+                    }
+                }
+            }
+            completed()
+        }
     }
 
     func updateCurrentWeather() {

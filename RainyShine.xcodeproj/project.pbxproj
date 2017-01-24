@@ -14,6 +14,7 @@
 		4EA105971E2E0F6F0001057A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA105951E2E0F6F0001057A /* Main.storyboard */; };
 		4EA105991E2E0F6F0001057A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EA105981E2E0F6F0001057A /* Assets.xcassets */; };
 		4EA1059C1E2E0F6F0001057A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EA1059A1E2E0F6F0001057A /* LaunchScreen.storyboard */; };
+		4EEB82E81E375AD100B4AC9C /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EEB82E71E375AD100B4AC9C /* Forecast.swift */; };
 		E6B1A344607D89ED473A7C50 /* Pods_RainyShine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18CB2E7E21286FED53F940D5 /* Pods_RainyShine.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		4EA105981E2E0F6F0001057A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EA1059B1E2E0F6F0001057A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EA1059D1E2E0F700001057A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EEB82E71E375AD100B4AC9C /* Forecast.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
 		5906F5EF28271A11F23B99D2 /* Pods-RainyShine.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RainyShine.release.xcconfig"; path = "Pods/Target Support Files/Pods-RainyShine/Pods-RainyShine.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -49,6 +51,7 @@
 			children = (
 				4E67238C1E3136E100790916 /* Constants.swift */,
 				4E67238E1E313B7300790916 /* CurrentWeather.swift */,
+				4EEB82E71E375AD100B4AC9C /* Forecast.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -237,6 +240,7 @@
 				4EA105921E2E0F6F0001057A /* AppDelegate.swift in Sources */,
 				4E67238F1E313B7300790916 /* CurrentWeather.swift in Sources */,
 				4E67238D1E3136E100790916 /* Constants.swift in Sources */,
+				4EEB82E81E375AD100B4AC9C /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
