@@ -9,6 +9,17 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Philosopher-Bold.ttf">
+            <string>Philosopher-Bold</string>
+        </array>
+        <array key="Philosopher-BoldItalic.ttf">
+            <string>Philosopher-BoldItalic</string>
+        </array>
+        <array key="Philosopher-Regular.ttf">
+            <string>Philosopher</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--WeatherVC-->
         <scene sceneID="tne-QT-ifu">
@@ -30,27 +41,27 @@
                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="YVy-cT-A1V">
-                                        <rect key="frame" x="20" y="20" width="144" height="260"/>
+                                        <rect key="frame" x="20" y="20" width="161" height="260"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Today's Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LuJ-mz-mHs">
-                                                <rect key="frame" x="12" y="0.0" width="120.5" height="24"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="20"/>
+                                                <rect key="frame" x="13" y="0.0" width="135.5" height="26.5"/>
+                                                <fontDescription key="fontDescription" name="Philosopher-Bold" family="Philosopher" pointSize="24"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pFC-Db-QbP">
-                                                <rect key="frame" x="26.5" y="94" width="91" height="72"/>
+                                                <rect key="frame" x="28" y="87.5" width="105" height="86"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="91" id="AfH-YA-AfE"/>
-                                                    <constraint firstAttribute="height" constant="72" id="HZ0-HZ-Wdg"/>
+                                                    <constraint firstAttribute="width" constant="105" id="AfH-YA-AfE"/>
+                                                    <constraint firstAttribute="height" constant="86" id="HZ0-HZ-Wdg"/>
                                                 </constraints>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="60"/>
+                                                <fontDescription key="fontDescription" name="Philosopher-BoldItalic" family="Philosopher" pointSize="60"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPj-Qh-Cnz">
-                                                <rect key="frame" x="0.0" y="236" width="144" height="24"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                <rect key="frame" x="0.0" y="236" width="161" height="24"/>
+                                                <fontDescription key="fontDescription" name="Philosopher" family="Philosopher" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -67,8 +78,8 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Condition" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hen-lD-nhT">
-                                                <rect key="frame" x="13.5" y="156" width="83" height="24"/>
-                                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                                <rect key="frame" x="9" y="156" width="92" height="24"/>
+                                                <fontDescription key="fontDescription" name="Philosopher" family="Philosopher" pointSize="22"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -101,18 +112,18 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="69"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9C8-Z3-cIg">
-                                                    <rect key="frame" x="16" y="9" width="50" height="50"/>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9C8-Z3-cIg">
+                                                    <rect key="frame" x="28" y="9" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="50" id="71e-3z-EBF"/>
                                                         <constraint firstAttribute="width" constant="50" id="J89-SZ-JeH"/>
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ah5-bT-j8g">
-                                                    <rect key="frame" x="86" y="10.5" width="261" height="47.5"/>
+                                                    <rect key="frame" x="98" y="10.5" width="249" height="47.5"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="VR1-Y4-hmp">
-                                                            <rect key="frame" x="0.0" y="0.0" width="216.5" height="47.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="204.5" height="47.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U81-6e-4hZ">
                                                                     <rect key="frame" x="0.0" y="0.0" width="37" height="24"/>
@@ -129,7 +140,7 @@
                                                             </subviews>
                                                         </stackView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nNr-mo-hXa">
-                                                            <rect key="frame" x="216.5" y="0.0" width="44.5" height="47.5"/>
+                                                            <rect key="frame" x="204.5" y="0.0" width="44.5" height="47.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="High" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ag8-mI-nV4">
                                                                     <rect key="frame" x="0.0" y="0.0" width="44.5" height="24"/>
@@ -151,7 +162,7 @@
                                             <color key="backgroundColor" red="0.84817100763320918" green="0.84817100763320918" blue="0.84817100763320918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="ah5-bT-j8g" secondAttribute="trailing" constant="20" id="7Lj-nk-aye"/>
-                                                <constraint firstItem="9C8-Z3-cIg" firstAttribute="leading" secondItem="W2v-ag-V6C" secondAttribute="leadingMargin" constant="8" id="BZg-ZJ-5Cv"/>
+                                                <constraint firstItem="9C8-Z3-cIg" firstAttribute="leading" secondItem="W2v-ag-V6C" secondAttribute="leadingMargin" constant="20" id="BZg-ZJ-5Cv"/>
                                                 <constraint firstItem="ah5-bT-j8g" firstAttribute="centerY" secondItem="W2v-ag-V6C" secondAttribute="centerY" id="JnW-0S-gIm"/>
                                                 <constraint firstItem="9C8-Z3-cIg" firstAttribute="centerY" secondItem="W2v-ag-V6C" secondAttribute="centerY" constant="-1" id="rQ9-pV-Sro"/>
                                                 <constraint firstItem="ah5-bT-j8g" firstAttribute="leading" secondItem="9C8-Z3-cIg" secondAttribute="trailing" constant="20" id="t4k-Cg-uvE"/>

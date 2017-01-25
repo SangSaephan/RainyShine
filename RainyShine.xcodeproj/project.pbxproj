@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4E1273111E37D4B9008E0D4E /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1273101E37D4B9008E0D4E /* WeatherCell.swift */; };
 		4E1273131E380F94008E0D4E /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E1273121E380F94008E0D4E /* Location.swift */; };
+		4E1273201E383AFC008E0D4E /* Philosopher-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E12731C1E383AFC008E0D4E /* Philosopher-Bold.ttf */; };
+		4E1273211E383AFC008E0D4E /* Philosopher-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E12731D1E383AFC008E0D4E /* Philosopher-BoldItalic.ttf */; };
+		4E1273221E383AFC008E0D4E /* Philosopher-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E12731E1E383AFC008E0D4E /* Philosopher-Italic.ttf */; };
+		4E1273231E383AFC008E0D4E /* Philosopher-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E12731F1E383AFC008E0D4E /* Philosopher-Regular.ttf */; };
 		4E67238D1E3136E100790916 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67238C1E3136E100790916 /* Constants.swift */; };
 		4E67238F1E313B7300790916 /* CurrentWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E67238E1E313B7300790916 /* CurrentWeather.swift */; };
 		4EA105921E2E0F6F0001057A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EA105911E2E0F6F0001057A /* AppDelegate.swift */; };
@@ -25,6 +29,10 @@
 		18CB2E7E21286FED53F940D5 /* Pods_RainyShine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RainyShine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E1273101E37D4B9008E0D4E /* WeatherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
 		4E1273121E380F94008E0D4E /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		4E12731C1E383AFC008E0D4E /* Philosopher-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philosopher-Bold.ttf"; sourceTree = "<group>"; };
+		4E12731D1E383AFC008E0D4E /* Philosopher-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philosopher-BoldItalic.ttf"; sourceTree = "<group>"; };
+		4E12731E1E383AFC008E0D4E /* Philosopher-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philosopher-Italic.ttf"; sourceTree = "<group>"; };
+		4E12731F1E383AFC008E0D4E /* Philosopher-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Philosopher-Regular.ttf"; sourceTree = "<group>"; };
 		4E67238C1E3136E100790916 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4E67238E1E313B7300790916 /* CurrentWeather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentWeather.swift; sourceTree = "<group>"; };
 		4EA1058E1E2E0F6F0001057A /* RainyShine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainyShine.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +98,10 @@
 				4EA105981E2E0F6F0001057A /* Assets.xcassets */,
 				4EA1059A1E2E0F6F0001057A /* LaunchScreen.storyboard */,
 				4EA1059D1E2E0F700001057A /* Info.plist */,
+				4E12731C1E383AFC008E0D4E /* Philosopher-Bold.ttf */,
+				4E12731D1E383AFC008E0D4E /* Philosopher-BoldItalic.ttf */,
+				4E12731E1E383AFC008E0D4E /* Philosopher-Italic.ttf */,
+				4E12731F1E383AFC008E0D4E /* Philosopher-Regular.ttf */,
 			);
 			path = RainyShine;
 			sourceTree = "<group>";
@@ -181,9 +193,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E1273231E383AFC008E0D4E /* Philosopher-Regular.ttf in Resources */,
 				4EA1059C1E2E0F6F0001057A /* LaunchScreen.storyboard in Resources */,
+				4E1273211E383AFC008E0D4E /* Philosopher-BoldItalic.ttf in Resources */,
 				4EA105991E2E0F6F0001057A /* Assets.xcassets in Resources */,
 				4EA105971E2E0F6F0001057A /* Main.storyboard in Resources */,
+				4E1273221E383AFC008E0D4E /* Philosopher-Italic.ttf in Resources */,
+				4E1273201E383AFC008E0D4E /* Philosopher-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
